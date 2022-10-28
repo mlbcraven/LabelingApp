@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/cardview_light_background"
+
+    tools:context=".Entry_Fragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Καλημερα σας - Καλη Διασκεδαση"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"/>
+
+    <Spinner
+        android:id="@+id/spnWorker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="100dp" />
+
+    <Spinner
+        android:id="@+id/spnWorkList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="200dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chbStart"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="250dp"
+        android:text="Εναρξη"/>
+
+    <CheckBox
+        android:id="@+id/chbFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="300dp"
+        android:text="Ληξη" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:id="@+id/EditNumberItem"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="300dp"
+        android:hint="Τεμαχια που Κανατε"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:id="@+id/EditProblemsId"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="350dp"
+        android:hint="Προβληματα που προεκυψαν"
+        />
+
+    <Button
+        android:id="@+id/btnEntry"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="395dp"
+        android:text="Kαταχωρηση"
+        android:textAllCaps="false"
+        android:textColor="@color/Grey"
+        android:textStyle="italic"
+        app:icon="@drawable/ic_baseline_person_add_24" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="395dp"
+        android:text="Διαγραφη Ολων"
+        android:textAllCaps="false"
+        android:textColor="@color/Grey"
+        android:textStyle="italic"
+        app:icon="@drawable/ic_baseline_person_remove_24" />
+</FrameLayout>
