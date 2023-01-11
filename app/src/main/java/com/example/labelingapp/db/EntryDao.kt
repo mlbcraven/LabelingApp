@@ -13,6 +13,9 @@ interface EntryDao {
     @Query("DELETE From Entry where Worker = :workerName ")
     fun deleteUser(workerName: String)
 
+    @Query("DELETE From Entry where id = :id ")
+    fun deleteId(id: String)
+
     @Query("Delete From Entry")
     fun nukeAll()
 

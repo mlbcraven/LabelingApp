@@ -5,13 +5,17 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.CheckBox
 import androidx.fragment.app.Fragment
 import com.example.labelingapp.databinding.ActivityMainBinding
+import com.example.labelingapp.databinding.EntryFragmentBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -26,6 +30,8 @@ class MainActivity : AppCompatActivity() {
         binding.btnStartScreen.setOnClickListener {
             fragmentNav(Entry_Fragment())
         }
+
+
     }
 
     private fun fragmentNav (fragment: Fragment) {
